@@ -20,7 +20,9 @@ textarea:disabled {
   opacity: 0.8;
   cursor: pointer;
 }
-
+img.profileimg {
+  min-width: 277px;
+}
 .bg-black {
   color: #fff;
   background-color: black;
