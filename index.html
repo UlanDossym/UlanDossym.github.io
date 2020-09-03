@@ -393,6 +393,11 @@ Core Web API, Kafka, Rabbit MQ</li>
       </footer>
     </div>
 
+    <div class="icon-bar d-none d-md-block">
+      <a href="https://www.facebook.com/ulan.dossumov.7" class="sidebar-fb"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/ulan-dossumov-7b77a9142/" class="sidebar-ln"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/UlanDossym" class="sidebar-git"><i class="fab fa-github"></i></a>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -416,6 +421,27 @@ Core Web API, Kafka, Rabbit MQ</li>
         $('.collapse').collapse('hide');
       });
       $('#year').text(new Date().getFullYear());
+
+      (() => {
+        'use strict';
+
+        const bannerHeight = 400;
+        const iconBar = document.querySelector('.icon-bar');
+
+        const handler = () => {
+          const newOffset = window.scrollY || window.pageYOffset;
+
+          if (newOffset > bannerHeight) {
+              iconBar.classList.remove('animateOut');
+              iconBar.classList.add('animateIn');
+          } else {
+              iconBar.classList.remove('animateIn');
+              iconBar.classList.add('animateOut');
+          }
+        };
+
+        window.addEventListener('scroll', handler, false);
+      })();
     </script>
   </body>
 </html>

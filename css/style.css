@@ -31,6 +31,51 @@ img.emp-logo {
   width: 200px;
 }
 
+.icon-bar {
+  position: fixed;
+  top: 40%;
+  transform: translateX(-100%);
+}
+
+.animateIn {
+  transform: translateX(0px);
+}
+
+.animateOut {
+  transform: translateX(-100%);
+}
+
+.icon-bar {
+  transition: all 0.3s ease-in-out;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.sidebar-fb {
+  background: #3b5998;
+  color: white;
+}
+
+.sidebar-ln {
+  background: #007bb5;
+  color: white;
+}
+
+.sidebar-git {
+  background: #777777;
+  color: white;
+}
+
 @media (min-width: 1199px) {
   port-item {
     padding: 3em !important;
