@@ -32,7 +32,42 @@ img.emp-logo {
   height: 100px;
   width: 200px;
 }
+.scrollTopBtn {
+  position: fixed;
+  top: 80%;
+  left: 93%;
+  transform: translateX(200%);
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.scrollTopBtnOn {
+  transform: translateX(0%);
+}
 
+.scrollTopBtnOff {
+  transform: translateX(200%);
+}
+.scrollTopBtn a {
+  color: rgba(106, 90, 205, 0.5);
+}
+.scrollTopBtn a:hover {
+  color: rgba(255, 255, 50, 0.5);
+}
+.scrollTopBtn a:link {
+  text-decoration: none;
+}
+.scrollTopBtn a:visited {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
 .icon-bar {
   position: fixed;
   top: 40%;
